@@ -31,7 +31,7 @@ class DataService {
                    "1197550_in_120",
                    "1197551_in_120"]
     
-    let txtArr = [ "VICTORIA",
+    let modelName = [ "VICTORIA",
                    "CAPISPALLA",
                    "PATOU",
                    "CHLOÉ",
@@ -45,7 +45,7 @@ class DataService {
                    "GUCCI"]
     
  
-    let descriptionArr = [ "mini dress is made",
+    let macroCategory = [ "mini dress is made",
                            "dress exudes the label's",
                            "florals appear in slightly",
                            "kaftan is inspired by gowns",
@@ -58,7 +58,7 @@ class DataService {
                            "Rains design ethos is",
                            "women should have the freedom",]
     
-    let description2Arr = [ "from a luxurious cashmere",
+    let microCategory = [ "from a luxurious cashmere",
                             "effortless bohemian vibe",
                             "darker hues this season",
                             "worn by the glamorous",
@@ -71,7 +71,7 @@ class DataService {
                             "rooted in functionality",
                             "to wear what they want"]
     
-    let priceArr = [ "$ 4000",
+    let price = [ "$ 4000",
                      "£ 2500",
                      "ZL 12000",
                      "Y 5394000",

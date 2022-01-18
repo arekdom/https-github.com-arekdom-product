@@ -35,9 +35,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? DataCollectionViewCell
         cell?.img.image = UIImage(named: dataService.imgArr[indexPath.row])
-        cell?.lbl.text = dataService.txtArr[indexPath.row]
+        cell?.lbl.text = dataService.modelName[indexPath.row]
         // cell?.lbl.text = name
-        cell?.price.text = dataService.priceArr[indexPath.row]
+        cell?.price.text = dataService.price[indexPath.row]
         
         return cell!
     }
@@ -45,11 +45,11 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         
-        vc?.name = dataService.txtArr[indexPath.row]
+        vc?.name = dataService.modelName[indexPath.row]
         vc?.imgName = dataService.imgArr[indexPath.row]
-        vc?.priceTag = dataService.priceArr[indexPath.row]
-        vc?.descriptionTxt = dataService.descriptionArr[indexPath.row]
-        vc?.descriptionTxt2 = dataService.description2Arr[indexPath.row]
+        vc?.priceTag = dataService.price[indexPath.row]
+        vc?.descriptionTxt = dataService.macroCategory[indexPath.row]
+        vc?.descriptionTxt2 = dataService.microCategory[indexPath.row]
         
         self.navigationController?.pushViewController(vc!, animated: true)
     }

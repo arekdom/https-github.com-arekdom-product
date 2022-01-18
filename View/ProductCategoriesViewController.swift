@@ -46,7 +46,7 @@ class ProductCategoriesViewController: UIViewController, UITableViewDataSource, 
         let category = DataService.instance.getCategories()[indexPath.row]
         
         vc1?.imgName = dataService.imgArr[indexPath.row]
-        vc1?.name = dataService.txtArr[indexPath.row]
+        vc1?.name = dataService.modelName[indexPath.row]
         vc1?.categoryTitle = category.title
         
         
