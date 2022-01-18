@@ -1,7 +1,4 @@
-//
-//  ProductCategoriesViewController.swift
-//  Products
-//
+
 //  Created by Arek on 15/01/2022.
 //  Copyright © 2022 Arek. All rights reserved.
 //
